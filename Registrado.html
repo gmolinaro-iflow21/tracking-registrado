@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Envío</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 60px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            font-size: 1.5rem;
+        }
+
+        .headerh2 {
+            display: inline;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .container {
+            margin: 10px;
+            max-width: 600px; /* Adjust the maximum width as needed */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+       .no-box {
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+
+        .tag {
+            background-color: #FFD666;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .pending {
+            font-weight: bold;
+            color: #22a822;
+        }
+
+        .on-the-way{
+            color: gray;
+            font-style: italic;
+        }
+
+        .delivered {
+            color: gray;
+            font-style: italic;
+        }
+
+        .greyed {
+            color: gray;
+            font-style: italic;
+        }
+        .event {
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+         .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn4.iconfinder.com/data/icons/smashicons-delivery-2-yellow/60/11_-Fast_Delivery-_shipping_transport_delivery-512.png" alt="Logo">
+        <h1>Envíos Wolfi</h1>
+    </header>
+<div class="headerh2">
+            <p>Tu envío OR00004456</p>
+        </div>
+    <div class="container">
+        <div class="box">
+            <h2>Detalles de tu envío</h2>
+            <p>Vendedor: TiendaStore</p>
+            <p>Referencia: #12345</p>
+            <p>Comprador: Martina L*****</p>
+            <p>ⓘ Somos Envíos Wolfi y nos estaremos encargando de la entrega de tu envío en el domicilio indicado.</p>
+        </div>
+
+        <div class="no-box">
+            <p>Tu pedido contiene 2 envíos:</p>
+        </div>
+
+        <div class="box">
+            <h2>TST0000001234 (1/2)</h2>
+            <p class="pending">1. Pendiente</p>
+            <div class="event">
+                <p>30/10/2023 08:00 | El vendedor ya está preparando tu pedido. En cuanto esté listo pasaremos a retirarlo para comenzar con el circuito de entrega.</p>
+            </div>
+            <p class="on-the-way">2. En camino</p>
+            <p class="delivered">3. Entregado</p>
+        </div>
+
+        <div class="box">
+            <h2>TST0000001235 (2/2)</h2>
+            <p class="pending">1. Pendiente</p>
+            <div class="event">
+                <p>30/10/2023 08:00 | El vendedor ya está preparando tu pedido. En cuanto esté listo pasaremos a retirarlo para comenzar con el circuito de entrega.</p>
+            </div>
+            <p class="on-the-way">2. En camino</p>
+            <p class="delivered">3. Entregado</p>
+        </div>
+
+        <div class="box" id="FAQs">
+            <h2>Ayuda con el envío</h2>
+            <details>
+                <summary>¿Qué pasa si mi pedido sigue en preparación?</summary>
+                <p>Te recomendamos contactarte con el vendedor de tu pedido para que te pueda brindar más información. Cuando el pedido esté listo te enviaremos un correo.</p>
+            </details>
+            <details>
+                <summary>Necesito cambiar la dirección de entrega</summary>
+                <p>Por modificaciones en tu domicilio te solicitamos te contactes de manera directa con el vendedor de tu pedido para poder gestionarlo.</p>
+            </details>
+            <details>
+                <summary>Tengo otra consulta  y necesito ayuda</summary>
+                <p>Te compartimos nuestro canal de atención para que nos dejes tu consulta y podamos ayudarte.<a href="" style="color: #333;">Contactanos</a>.</p>
+            </details>
+        </div>
+    </div>
+    <!-- Floating Button Linking to FAQs -->
+    <a href="#FAQs" class="floating-button" title="ir a ayuda">?</a>
+
+    <footer>
+        <p>Envíos Wolfi SA | ALL RIGHTS RESERVED | Prestador de Enacom R.N.P.S.P.: 1003 | Términos y condiciones | Defensa al consumidor.</p>
+    </footer>
+</body>
+</html>
+
+
